@@ -56,15 +56,14 @@ function total() {
 total(cart);
 
 function removeFromCart(item) {
-  for(let i = 0; i<cart.length; i++){
     if(cart[i].item == item){
       cart.splice(i, 1)
       return cart
     } else {
       return "That item is not in your cart."
     }
-  }
-}learn
+}
+  
 
 
 removeFromCart('skis');
@@ -72,9 +71,10 @@ removeFromCart('skis');
   
 function placeOrder(cardNumber) {
   if(cardNumber)  {
-    for (var i = getCart().length; i>= 0; i--){ 
-    console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`)
-    return cart.pop();} 
+      console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`)
+    for (var i = getCart().length; i >= 0; i--){ 
+    return cart.pop();
+    } 
   }
   else 
   {
