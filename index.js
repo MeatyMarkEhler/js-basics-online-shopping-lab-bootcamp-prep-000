@@ -60,11 +60,12 @@ function removeFromCart(item) {
     if(cart[i].item == item){
       cart.splice(i, 1)
       return cart
-    } else (){
+    } else {
       return "That item is not in your cart."
     }
   }
-}
+}learn
+
 
 removeFromCart('skis');
   
