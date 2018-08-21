@@ -56,12 +56,14 @@ function total() {
 total(cart);
 
 function removeFromCart(item) {
-    if(getCart().item == item){
-      removed.splice(item, 1)
-      return removed
-    } else {
-      return "That item is not in your cart."
-    }
+  for (var i = 0; i <cart.length; i++) {
+    if (cart[i].hasOwnProperty(item)) {
+      cart.splice(i, 1)
+      return cart
+    } 
+  }
+  console.log('That item is not in your cart.')
+  return cart
 }
   
 
