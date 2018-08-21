@@ -33,7 +33,7 @@ function viewCart() {
     return 'Your shopping cart is empty.'}
   
   else if (cart.length === 1){
-    cartItems.push(` ${cart[0].itemName} at $${cart[0].itemPrice}.`)} 
+    cartItems.push(` ${cart[0].itemName} at $${cart[0].itemPrice}`)} 
   
   else {
   for (let i = 1; i < getCart().length - 1; i++){
