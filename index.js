@@ -58,7 +58,7 @@ total(cart);
 function removeFromCart(item) {
     if(cart.item == item){
       removed.splice(item, 1)
-      return.removed
+      return removed
     } else {
       return "That item is not in your cart."
     }
