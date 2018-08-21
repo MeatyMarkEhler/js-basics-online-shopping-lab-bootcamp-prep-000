@@ -73,9 +73,10 @@ removeFromCart('skis');
 function placeOrder(cardNumber) {
   if(cardNumber)  {
     for (var i = getCart().length; i >= 0; i--){ 
-    return cart.pop();
+    cart.pop();
+    i--;
     } 
-      console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`)
+    return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
     
   }
   else 
