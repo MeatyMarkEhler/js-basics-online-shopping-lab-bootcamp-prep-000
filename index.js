@@ -26,16 +26,15 @@ addToCart('skis');
 addToCart('shoes');
 
 
-<<<<<<< HEAD
-=======
-/*
->>>>>>> 1a7f0977c696d1d729217a18b72d90bebdd52a00
 function viewCart() {
+  
   var cartItems = [];
-  if (cart.length === 0) {
+  if (cart.length === 0 ) {
     return 'Your shopping cart is empty.'}
+  
   else if (cart.length === 1){
-    cartItems.push(` ${cart[0].itemName} at $${cart[0].itemPrice}`)} 
+    cartItems.push(` ${cart[0].itemName} at $${cart[0].itemPrice}.`)} 
+  
   else {
   for (let i = 1; i < cart.length - 1; i++){
     cartItems.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)}
@@ -45,7 +44,6 @@ function viewCart() {
 }
 
 viewCart(cart);
-*/
 
 function total() {
   var pricePerItemInCart = [];
