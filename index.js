@@ -39,7 +39,7 @@ function viewCart() {
   for (let i = 1; i < getCart().length - 1; i++){
     cartItems.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)}
     
- cartItems.push(` and ${getCart[getCart.length -1].itemName} at $${getCart[getCart.length -1].itemPrice}`);}
+ cartItems.push(` and ${getCart()[cart.length -1].itemName} at $${cart[cart.length -1].itemPrice}`);}
  return `In your cart, you have${cartItems}.`     
 }
 
