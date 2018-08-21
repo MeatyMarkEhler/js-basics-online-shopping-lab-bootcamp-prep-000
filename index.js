@@ -56,7 +56,7 @@ function total() {
 total(cart);
 
 function removeFromCart(item) {
-    if(cart.item == item){
+    if(getCart.item == item){
       removed.splice(item, 1)
       return removed
     } else {
