@@ -47,7 +47,7 @@ viewCart(cart);
 
 function total() {
   var pricePerItemInCart = [];
-  for(var i = 0; i < cart.length; i++){
+  for(var i = 0; i < getCart().length; i++){
     pricePerItemInCart += cart[i].itemPrice
   }
   return pricePerItemInCart
