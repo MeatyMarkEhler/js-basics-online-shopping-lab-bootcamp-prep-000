@@ -71,19 +71,18 @@ removeFromCart('skis');
   
   
 function placeOrder(cardNumber) {
-  if(cardNumber)  {
-      console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`)
-    for (var i = getCart().length; i >= 0; i--){ 
-    return cart.pop();
-    } 
+  if(cardNumber) 
+  {
+    console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`)
+    for (var i = cart.length; i>= 0; i--)
+    { cart.pop();} 
   }
   else 
   {
-    return 'Sorry, we don\'t have a credit card on file for you.'
+    console.log('Sorry, we don\'t have a credit card on file for you.')
+    return cart;
   }
 }
-
-placeOrder();
 
 
 
